@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helados Los Sabrosos</title>
+    <link rel="stylesheet" href="estilo dayu.css">
+    <script src="script dayu.js" defer></script>
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1>🍦 HELADOS LOS SABROSOS 🍦</h1>
+        <p>¡El sabor que alegra tu día!</p>
+        <h3>Deliciosos, cremosos y preparados con amor</h3>
+    </header>
+
+    <nav class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#catalogo">Nuestros sabores</a>
+        <a href="#carrito">Mi carrito</a>
+        <a href="#contacto">Pedidos</a>
+    </nav>
+
+    <section class="presentacion" id="inicio">
+        <h2>¡Bienvenidos a nuestro catálogo!</h2>
+        <p>Descubre nuestros deliciosos helados. Tenemos 10 sabores para disfrutar.</p>
+    </section>
+
+    <main class="contenedor" id="catalogo">
+        <h2 class="titulo">NUESTROS 10 SABORES</h2>
+
+        <div class="catalogo">
+
+            <div class="producto">
+                <img src="imagenes/bizcocho.jpeg" alt="Helado de bizcocho">
+                <h3>Helado de Bizcocho</h3>
+                <p>Dulce, cremoso y delicioso.</p>
+                <h4>RD$65</h4>
+                <button onclick="agregarCarrito('Bizcocho', 65)">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/batata con coco.jpeg" alt="Helado de batata con coco">
+                <h3>Batata con Coco</h3>
+                <p>Una combinación tradicional y cremosa.</p>
+                <h4>RD$65</h4>
+                <button onclick="agregarCarrito('Batata con coco', 65)">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/piña colada.jpeg" alt="Helado de piña colada">
+                <h3>Piña Colada</h3>
+                <p>Un delicioso toque tropical.</p>
+                <h4>RD$65</h4>
+                <button onclick="agregarCarrito('Piña colada', 65)">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/fresa.jpeg" alt="Helado de fresa">
+                <h3>Fresa</h3>
+                <p>Dulce y refrescante sabor frutal.</p>
+                <h4>RD$65</h4>
+                <button onclick="agregarCarrito('Fresa', 65)">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/choco crema.jpeg" alt="Helado de choco crema">
+                <h3>Choco Crema</h3>
+                <p>Una delicia para los amantes del chocolate.</p>
+                <h4>RD$65</h4>
+                <button onclick="agregarCarrito('Choco crema', 65)">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/oreo.jpeg" alt="Helado de Oreo">
+                <h3>Oreo</h3>
+                <p>Cremoso con sabor a galletas Oreo.</p>
+                <h4>RD$65</h4>
+                <button onclick="agregarCarrito('Oreo', 65)">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/dulce de leche.jpeg" alt="Helado de dulce de leche">
+                <h3>Dulce de Leche</h3>
+                <p>Suave, dulce y delicioso.</p>
+                <h4>RD$75</h4>
+                <button onclick="agregarCarrito('Dulce de leche', 75)">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/guanabana.jpeg" alt="Helado de guanábana">
+                <h3>Guanábana</h3>
+                <p>Un sabor tropical y refrescante.</p>
+                <h4>RD$80</h4>
+                <button onclick="agregarCarrito('Guanábana', 80)">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/coco.jpeg" alt="Helado de coco">
+                <h3>Coco</h3>
+                <p>Delicioso y cremoso sabor a coco.</p>
+                <h4>RD$65</h4>
+                <button onclick="agregarCarrito('Coco', 65)">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/cafe.jpeg" alt="Helado de café">
+                <h3>Café</h3>
+                <p>Un sabor especial para los amantes del café.</p>
+                <h4>RD$65</h4>
+                <button onclick="agregarCarrito('Café', 65)">Agregar al carrito</button>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="carrito" id="carrito">
+        <h2>🛒 MI CARRITO DE COMPRAS</h2>
+
+        <div id="lista-carrito">
+            <p>Tu carrito está vacío.</p>
+        </div>
+
+        <h3>Total: <span id="total">RD$0</span></h3>
+
+        <button onclick="vaciarCarrito()">Vaciar carrito</button>
+        <button onclick="comprarWhatsApp()">Completar pedido por WhatsApp</button>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2>¡Haz tu pedido!</h2>
+        <p>Elige tu sabor favorito y disfruta nuestros helados.</p>
+        <a href="#catalogo">Ver nuestros sabores</a>
+    </section>
+
+    <footer>
+        <p>© 2026 Helados Los Sabrosos</p>
+        <p>¡Gracias por preferirnos!</p>
+    </footer>
+
+</body>
+</html>
